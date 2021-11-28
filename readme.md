@@ -3,7 +3,7 @@
 This repository created for Appcent academy event. [Link](https://kommunity.com/appcent-tech-hub/events/unit-test-d6c32340)
 We discussed unit test, mock object and benefit of unit test when refactor processing 
 
-## Before to Start
+## 1 - Before to Start
 
 - Install .Net Core 5.0
 - Make sure running SQL Server (Dockerized or Already installed)
@@ -26,3 +26,21 @@ docker run --name dev_mssql -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=yourStrong(!)Pass
   }
 }
  ```
+
+## 2 - What we
+
+
+## 3 - What Was Used in Our Project?
+- Unittest.Api (webapi, .net core 5.0)
+    - AspNetCore.HealthChecks.SqlServer
+    - FluentMigrator
+      - FluentMigrator.Runner
+    - FluentValidation
+      - FluentValidation.AspNetCore
+    - Dapper
+- Unittest.Tests (xunit, .net core 5.0)
+  - AutoFixture
+    - AutoFixture.AutoMoq
+  - FluentAssertions
+    - FluentMigrator.Runner
+  - Moq
