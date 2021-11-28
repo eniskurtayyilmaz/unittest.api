@@ -1,8 +1,10 @@
 #Unittest Api
 
 This repository created for Appcent academy event. [Link](https://kommunity.com/appcent-tech-hub/events/unit-test-d6c32340)
-
 We discussed unit test, mock object and benefit of unit test when refactor processing
+
+![Event](https://media-exp1.licdn.com/dms/image/C4D22AQFXEsBLyfc29w/feedshare-shrink_1280/0/1637824007447?e=1640822400&v=beta&t=pM3VSo85nfmHMdRIYIGtxJSV4RnujkNljs0mHai1q1M)
+
 
 ## 1 - Before to Start
 
