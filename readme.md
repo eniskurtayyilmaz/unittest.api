@@ -1,7 +1,8 @@
 #Unittest Api
 
 This repository created for Appcent academy event. [Link](https://kommunity.com/appcent-tech-hub/events/unit-test-d6c32340)
-We discussed unit test, mock object and benefit of unit test when refactor processing 
+
+We discussed unit test, mock object and benefit of unit test when refactor processing
 
 ## 1 - Before to Start
 
@@ -21,25 +22,25 @@ docker run --name dev_mssql -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=yourStrong(!)Pass
 #### ConnectionString _(appsetting.json)_
 ```json
 {
- "ConnectionStrings": {
+  "ConnectionStrings": {
     "AppDbContext": "Server=localhost,1433;Database=unittestapi;User=sa;Password=yourStrong(!)Password;Trusted_Connection=False;TrustServerCertificate=True;"
   }
 }
  ```
 
-## 2 - What Were We Planned? 
+## 2 - What Were We Planned?
 - Create test cases
 - Mock our dependency injection objects
 - Verify untouched objects or methods
 
 ## 3 - What Was Used in Our Project?
 - Unittest.Api (webapi, .net core 5.0)
-    - AspNetCore.HealthChecks.SqlServer
-    - FluentMigrator
-      - FluentMigrator.Runner
-    - FluentValidation
-      - FluentValidation.AspNetCore
-    - Dapper
+  - AspNetCore.HealthChecks.SqlServer
+  - FluentMigrator
+    - FluentMigrator.Runner
+  - FluentValidation
+    - FluentValidation.AspNetCore
+  - Dapper
 - Unittest.Tests (xunit, .net core 5.0)
   - AutoFixture
     - AutoFixture.AutoMoq
