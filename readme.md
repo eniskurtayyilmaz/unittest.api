@@ -16,7 +16,7 @@ We discussed unit test, mock object and benefit of unit test when refactor proce
 
 You need to run SQL Server
 
-If you already have Docker, use above command line to create container
+If you already have Docker, use below command line to create container
 ```bash
 docker run --name dev_mssql -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=yourStrong(!)Password' -p 1433:1433 -d mcr.microsoft.com/mssql/server:2017-latest
 ```
@@ -29,6 +29,16 @@ docker run --name dev_mssql -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=yourStrong(!)Pass
   }
 }
  ```
+
+#### Launch on Browser _(launchSettings.json)_
+Open below link and make sure that **Sql Server is "Healthy"**
+```net
+http://localhost:4000/health-check
+```
+```json
+{"status":"Healthy","components":[{"key":"Sql Server","value":"Healthy"}]}
+ ```
+
 
 ## 2 - What Were We Planned?
 - Create test cases
