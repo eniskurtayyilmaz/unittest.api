@@ -27,8 +27,10 @@ docker run --name dev_mssql -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=yourStrong(!)Pass
 }
  ```
 
-## 2 - What we
-
+## 2 - What Were We Planned? 
+- Create test cases
+- Mock our dependency injection objects
+- Verify untouched objects or methods
 
 ## 3 - What Was Used in Our Project?
 - Unittest.Api (webapi, .net core 5.0)
