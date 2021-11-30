@@ -33,8 +33,6 @@
 
   <ItemGroup>
     <Folder Include="Controllers" />
-    <Folder Include="Services" />
-    <Folder Include="Validators" />
   </ItemGroup>
 
 </Project>

@@ -16,14 +16,4 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Common" />
-    <Folder Include="Controllers" />
-    <Folder Include="Domains" />
-    <Folder Include="Migrations" />
-    <Folder Include="Models" />
-    <Folder Include="Services" />
-    <Folder Include="Validators" />
-  </ItemGroup>
-
 </Project>

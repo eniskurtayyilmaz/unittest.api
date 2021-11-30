@@ -1,9 +1,13 @@
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Unittest.Api.Extensions;
+using Unittest.Api.Repositories;
+using Unittest.Api.Services;
+using Unittest.Api.Validators;
 
 namespace Unittest.Api
 {
@@ -18,6 +22,10 @@ namespace Unittest.Api
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton<INotificationSender, EmailSender>();
+            services.AddSingleton<ICustomerRepository, CustomerRepository>();
+            services.AddSingleton<ICustomerService, CustomerService>();
+            services.AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CustomerCreateValidator>());
             services.AddHealthChecks();
             services.AddSqlServer(Configuration, "Unittest.Api");
             services.AddControllers();
