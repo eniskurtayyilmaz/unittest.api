@@ -10,7 +10,9 @@ We discussed unit test, mock object and benefit of unit test when refactor proce
 
 - Install .Net Core 5.0
 - Make sure running SQL Server (Dockerized or Already installed)
-- Setup your SQL Server environment (Database, ConnectionString)
+- Setup your SQL Server environment 
+  - Create Database "unittestapi"
+  - Make sure correct ConnectionString in appsettings.json
 
 #### Setup
 
@@ -21,7 +23,13 @@ If you already have Docker, use below command line to create container
 docker run --name dev_mssql -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=yourStrong(!)Password' -p 1433:1433 -d mcr.microsoft.com/mssql/server:2017-latest
 ```
 
-#### ConnectionString _(appsetting.json)_
+#### Create database (unittestapi)
+```sql
+create database unittestapi
+go
+ ```
+
+#### ConnectionString _(appsettings.json)_
 ```json
 {
   "ConnectionStrings": {
