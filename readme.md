@@ -67,3 +67,6 @@ http://localhost:4000/health-check
   - FluentAssertions
     - FluentMigrator.Runner
   - Moq
+
+#### Buy me a coffee
+You can [buy me a coffee](https://www.buymeacoffee.com/eniskurtay) if you want to say _thank you_:) 
